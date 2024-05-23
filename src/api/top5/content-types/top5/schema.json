@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "top5s",
+  "info": {
+    "singularName": "top5",
+    "pluralName": "top5s",
+    "displayName": "top5"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "number": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}
