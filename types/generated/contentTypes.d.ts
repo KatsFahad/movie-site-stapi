@@ -825,6 +825,7 @@ export interface ApiGenreGenre extends Schema.CollectionType {
     singularName: 'genre';
     pluralName: 'genres';
     displayName: 'genre';
+    description: '';
   };
   options: {
     draftAndPublish: true;
@@ -832,6 +833,7 @@ export interface ApiGenreGenre extends Schema.CollectionType {
   attributes: {
     title: Attribute.String;
     image: Attribute.Media;
+    link: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
