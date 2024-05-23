@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "horrors",
+  "info": {
+    "singularName": "horror",
+    "pluralName": "horrors",
+    "displayName": "horror"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "number": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

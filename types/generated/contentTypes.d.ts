@@ -788,6 +788,134 @@ export interface PluginI18NLocale extends Schema.CollectionType {
   };
 }
 
+export interface ApiActionAction extends Schema.CollectionType {
+  collectionName: 'actions';
+  info: {
+    singularName: 'action';
+    pluralName: 'actions';
+    displayName: 'action';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    number: Attribute.String;
+    title: Attribute.String;
+    image: Attribute.Media;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::action.action',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::action.action',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
+export interface ApiAdventureAdventure extends Schema.CollectionType {
+  collectionName: 'adventures';
+  info: {
+    singularName: 'adventure';
+    pluralName: 'adventures';
+    displayName: 'adventure';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    number: Attribute.String;
+    ttitle: Attribute.String;
+    image: Attribute.Media;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::adventure.adventure',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::adventure.adventure',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
+export interface ApiAnimationAnimation extends Schema.CollectionType {
+  collectionName: 'animations';
+  info: {
+    singularName: 'animation';
+    pluralName: 'animations';
+    displayName: 'animation';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    number: Attribute.String;
+    title: Attribute.String;
+    image: Attribute.Media;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::animation.animation',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::animation.animation',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
+export interface ApiComicComic extends Schema.CollectionType {
+  collectionName: 'comics';
+  info: {
+    singularName: 'comic';
+    pluralName: 'comics';
+    displayName: 'comic';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    number: Attribute.String;
+    title: Attribute.String;
+    image: Attribute.Media;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::comic.comic',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::comic.comic',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
 export interface ApiFightsceneFightscene extends Schema.CollectionType {
   collectionName: 'fightscenes';
   info: {
@@ -852,6 +980,38 @@ export interface ApiGenreGenre extends Schema.CollectionType {
   };
 }
 
+export interface ApiHorrorHorror extends Schema.CollectionType {
+  collectionName: 'horrors';
+  info: {
+    singularName: 'horror';
+    pluralName: 'horrors';
+    displayName: 'horror';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    number: Attribute.String;
+    title: Attribute.String;
+    image: Attribute.Media;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::horror.horror',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::horror.horror',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
 export interface ApiTop5Top5 extends Schema.CollectionType {
   collectionName: 'top5s';
   info: {
@@ -894,8 +1054,13 @@ declare module '@strapi/types' {
       'plugin::users-permissions.role': PluginUsersPermissionsRole;
       'plugin::users-permissions.user': PluginUsersPermissionsUser;
       'plugin::i18n.locale': PluginI18NLocale;
+      'api::action.action': ApiActionAction;
+      'api::adventure.adventure': ApiAdventureAdventure;
+      'api::animation.animation': ApiAnimationAnimation;
+      'api::comic.comic': ApiComicComic;
       'api::fightscene.fightscene': ApiFightsceneFightscene;
       'api::genre.genre': ApiGenreGenre;
+      'api::horror.horror': ApiHorrorHorror;
       'api::top5.top5': ApiTop5Top5;
     }
   }
