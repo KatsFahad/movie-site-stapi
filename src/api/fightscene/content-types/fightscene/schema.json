@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "fightscenes",
+  "info": {
+    "singularName": "fightscene",
+    "pluralName": "fightscenes",
+    "displayName": "fightscene"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "link": {
+      "type": "string"
+    }
+  }
+}
