@@ -1018,6 +1018,7 @@ export interface ApiTop5Top5 extends Schema.CollectionType {
     singularName: 'top5';
     pluralName: 'top5s';
     displayName: 'top5';
+    description: '';
   };
   options: {
     draftAndPublish: true;
@@ -1026,6 +1027,7 @@ export interface ApiTop5Top5 extends Schema.CollectionType {
     number: Attribute.String;
     title: Attribute.String;
     image: Attribute.Media;
+    go: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
