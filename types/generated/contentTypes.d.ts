@@ -794,6 +794,7 @@ export interface ApiActionAction extends Schema.CollectionType {
     singularName: 'action';
     pluralName: 'actions';
     displayName: 'action';
+    description: '';
   };
   options: {
     draftAndPublish: true;
@@ -802,6 +803,7 @@ export interface ApiActionAction extends Schema.CollectionType {
     number: Attribute.String;
     title: Attribute.String;
     image: Attribute.Media;
+    go: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -826,6 +828,7 @@ export interface ApiAdventureAdventure extends Schema.CollectionType {
     singularName: 'adventure';
     pluralName: 'adventures';
     displayName: 'adventure';
+    description: '';
   };
   options: {
     draftAndPublish: true;
@@ -834,6 +837,7 @@ export interface ApiAdventureAdventure extends Schema.CollectionType {
     number: Attribute.String;
     ttitle: Attribute.String;
     image: Attribute.Media;
+    go: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -858,6 +862,7 @@ export interface ApiAnimationAnimation extends Schema.CollectionType {
     singularName: 'animation';
     pluralName: 'animations';
     displayName: 'animation';
+    description: '';
   };
   options: {
     draftAndPublish: true;
@@ -866,6 +871,7 @@ export interface ApiAnimationAnimation extends Schema.CollectionType {
     number: Attribute.String;
     title: Attribute.String;
     image: Attribute.Media;
+    go: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -890,6 +896,7 @@ export interface ApiComicComic extends Schema.CollectionType {
     singularName: 'comic';
     pluralName: 'comics';
     displayName: 'comic';
+    description: '';
   };
   options: {
     draftAndPublish: true;
@@ -898,6 +905,7 @@ export interface ApiComicComic extends Schema.CollectionType {
     number: Attribute.String;
     title: Attribute.String;
     image: Attribute.Media;
+    go: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -986,6 +994,7 @@ export interface ApiHorrorHorror extends Schema.CollectionType {
     singularName: 'horror';
     pluralName: 'horrors';
     displayName: 'horror';
+    description: '';
   };
   options: {
     draftAndPublish: true;
@@ -994,6 +1003,7 @@ export interface ApiHorrorHorror extends Schema.CollectionType {
     number: Attribute.String;
     title: Attribute.String;
     image: Attribute.Media;
+    go: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

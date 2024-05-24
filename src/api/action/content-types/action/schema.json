@@ -4,7 +4,8 @@
   "info": {
     "singularName": "action",
     "pluralName": "actions",
-    "displayName": "action"
+    "displayName": "action",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -18,14 +19,18 @@
       "type": "string"
     },
     "image": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": true
+      ]
+    },
+    "go": {
+      "type": "string"
     }
   }
 }
