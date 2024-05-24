@@ -835,7 +835,7 @@ export interface ApiAdventureAdventure extends Schema.CollectionType {
   };
   attributes: {
     number: Attribute.String;
-    ttitle: Attribute.String;
+    title: Attribute.String;
     image: Attribute.Media;
     go: Attribute.String;
     createdAt: Attribute.DateTime;

@@ -15,7 +15,7 @@
     "number": {
       "type": "string"
     },
-    "ttitle": {
+    "title": {
       "type": "string"
     },
     "image": {
